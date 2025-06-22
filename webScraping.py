@@ -1,13 +1,9 @@
-from bs4 import BeautifulSoup, Comment
 import requests
 import re
 
 url = "http://127.0.0.1:8000/victima.html"
 response = requests.get(url)
-soup = BeautifulSoup(response.text, "html.parser")
-
-links = [a["href"] for a in soup.find_all("a", href=True)]
-print("Enlaces encontrados:")
+soup = BeautifulSoup(respon")
 print(links)
 
 comments = [str(comment) for comment in soup.find_all(
